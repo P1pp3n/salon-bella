@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon Bella | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4 py-4">
+            <h1 class="text-2xl font-bold">Salon Bella</h1>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="nav-links"
+                class="hidden md:flex md:space-x-6 absolute md:static top-full left-0 w-full bg-white md:w-auto md:bg-transparent text-center md:text-left">
+                <a href="index.html" class="block py-2 px-4 text-blue-500 font-semibold md:inline">Home</a>
+                <a href="about.html" class="block py-2 px-4 md:inline">About</a>
+                <a href="services.html" class="block py-2 px-4 md:inline">Services</a>
+                <a href="gallery.html" class="block py-2 px-4 md:inline">Gallery</a>
+                <a href="contact.html" class="block py-2 px-4 md:inline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-pink-300 to-pink-500 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Your Beauty, Our Passion</h2>
+            <p class="text-lg md:text-xl mb-6">Premium salon services tailored for you in the heart of Nairobi.</p>
+            <a href="contact.html"
+                class="bg-white text-pink-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Book
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Features / Services Preview -->
+    <section class="py-16 bg-gray-100 text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8">Our Services</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <img src="images/haricut.jpg.jpg" alt="Haircut" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-xl">Hair Styling</h4>
+                </div>
+                <div>
+                    <img src="images/makeup2.jpg.jpg" alt="Makeup" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-xl">Makeup</h4>
+                </div>
+                <div>
+                    <img src="images/massage.jpg" alt="Massage" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-xl">Massage</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Salon Bella. All rights reserved.</p>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

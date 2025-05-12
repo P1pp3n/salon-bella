@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Salon Bella</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar (same as index.html) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4 py-4">
+            <h1 class="text-2xl font-bold">Salon Bella</h1>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="nav-links"
+                class="hidden md:flex md:space-x-6 absolute md:static top-full left-0 w-full bg-white md:w-auto md:bg-transparent text-center md:text-left">
+                <a href="index.html" class="block py-2 px-4 md:inline">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-blue-500 font-semibold md:inline">About</a>
+                <a href="services.html" class="block py-2 px-4 md:inline">Services</a>
+                <a href="gallery.html" class="block py-2 px-4 md:inline">Gallery</a>
+                <a href="contact.html" class="block py-2 px-4 md:inline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Story</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto text-center mb-8">
+                At Salon Bella, we believe beauty is about feeling your best. Founded in 2020 in Nairobi, our mission
+                has always been to provide top-tier salon experiences that blend expertise with a personal touch. From
+                styling to skincare, our team is passionate about helping you shine.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Experienced Stylists</h3>
+                    <p>Our team brings over 10 years of professional beauty care experience.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Eco-Friendly Products</h3>
+                    <p>We use high-quality, cruelty-free, and eco-safe products.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Client-First Culture</h3>
+                    <p>Every service is tailored to your needs, comfort, and lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Salon Bella. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for mobile toggle -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
