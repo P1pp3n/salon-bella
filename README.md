@@ -3,7 +3,7 @@
 A fully responsive and modern website template for a local salon, designed to help small businesses establish a professional online presence.
 
 ## 🚀 Live Demo
-[View Website Here](https://your-username.github.io/salon-bella/) <!-- Replace with your actual GitHub Pages or Netlify link -->
+[View Website Here]((https://salon-bella.vercel.app/)) 
 
 ---
 
@@ -44,7 +44,7 @@ A fully responsive and modern website template for a local salon, designed to he
 
 ### 🔹 GitHub Pages
 ```bash
-git clone https://github.com/your-username/salon-bella.git
+git clone https://github.com/p1pp3n/salon-bella.git
 cd salon-bella
 # Make edits if needed
 git add .
