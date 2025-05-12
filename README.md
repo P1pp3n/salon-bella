@@ -3,7 +3,7 @@
 A fully responsive and modern website template for a local salon, designed to help small businesses establish a professional online presence.
 
 ## 🚀 Live Demo
-[View Website Here]((https://salon-bella.vercel.app/)) 
+[View Website Here](https://salon-bella.vercel.app/) 
 
 ---
 
